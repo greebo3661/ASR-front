@@ -1,0 +1,7 @@
+services:
+  asr-frontend:
+    build: .
+    ports:
+      - "19000:80"
+    env_file:
+      - .env
