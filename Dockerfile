@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package.json ./
 RUN npm install
 
-COPY index.html vite.config.ts tsconfig.json tsconfig.node.json ./
+COPY index.html vite.config.ts tsconfig.json tsconfig.node.json tailwind.config.mjs postcss.config.js ./
 COPY src ./src
 RUN npm run build
 
